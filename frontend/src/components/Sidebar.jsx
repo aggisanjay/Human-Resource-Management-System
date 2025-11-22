@@ -12,7 +12,7 @@ export default function Sidebar() {
   ];
 
   return (
-    <div className="w-60 shrink-0 h-full bg-white border-r p-4">
+    <div className="w-60 h-screen shrink-0 bg-white border-r p-4">
       <div className="mb-6 font-bold text-lg">HRMS</div>
       <nav className="flex flex-col gap-2">
         {items.map(i => (
