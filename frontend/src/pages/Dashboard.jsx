@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import api from "../lib/api";
 import { Users, Layers, PlusCircle, Activity } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 export default function Dashboard() {
   const navigate = useNavigate();
   const [employeeCount, setEmployeeCount] = useState(0);
@@ -82,12 +82,15 @@ export default function Dashboard() {
               <div>
                 <p className="text-gray-500 text-sm">Quick Actions</p>
                 <div className="flex gap-2 mt-2">
-                  <a href="/employees" className="bg-blue-600 text-white px-3 py-1 text-sm rounded">
-                    Add Employee
-                  </a>
-                  <a href="/teams" className="bg-green-600 text-white px-3 py-1 text-sm rounded">
-                    Add Team
-                  </a>
+                  <Link to="/employees" className="bg-blue-600 text-white px-3 py-1 text-sm rounded">
+  Add Employee
+</Link>
+
+<Link to="/teams" className="bg-green-600 text-white px-3 py-1 text-sm rounded">
+  Add Team
+</Link>
+
+
                 </div>
               </div>
             </div>
